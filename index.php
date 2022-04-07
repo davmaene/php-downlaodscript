@@ -1,5 +1,6 @@
 <?php
 $file = 'releases/L1000Pay.apk';
+require_once("./script/configs.php");
 
 if (file_exists($file)) {
     header('Content-Description: File Transfer');
@@ -10,6 +11,7 @@ if (file_exists($file)) {
     header('Pragma: public');
     header('Content-Length: ' . filesize($file));
     readfile($file);
+    _saveDWNLD();
     exit;
 }
 ?>
