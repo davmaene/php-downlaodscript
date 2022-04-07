@@ -6,8 +6,8 @@
             // db: lservice__lmilleservices
             // user: lservice_lservice
             // pwd: O#.2dqZKsHJv
-            // $bdd = new PDO('mysql:host=127.0.0.1;dbname=lservice__lmilleservices','lservice_lservice','O#.2dqZKsHJv');
-            $bdd = new PDO('mysql:host=localhost;dbname=__db_lesmilleservices','root','');
+            $bdd = new PDO('mysql:host=127.0.0.1;dbname=lservice__lmilleservices','lservice_lservice','O#.2dqZKsHJv');
+            // $bdd = new PDO('mysql:host=localhost;dbname=__db_lesmilleservices','root','');
             $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             // $bdd = new PDO('mysql:host=localhost;dbname=lesmi935861_113zbvl','root','');
             if($bdd != null){
